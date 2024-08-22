@@ -1,8 +1,11 @@
 ## amcl+fast_planner+mpc实现差速小车定位与规控
 ## 参考的项目：
-
+轨迹规划：https://github.com/HKUST-Aerial-Robotics/Fast-Planner
+MPC： https://github.com/Dangko/ego-planner-for-ground-robot
+https://github.com/USE-jx/LMPC_OSQP_EIGEN/
 ## 代码运行效果视频：
-
+单无人车实车运行视频：
+多无人车多点访问仿真视频：https://www.bilibili.com/video/BV1ZE421379M/?spm_id_from=333.999.0.0&vd_source=f4ec4aca12529934576bd467bb68a430
 ## 求解器
 需要安装OSQP，OSQP-Eigen，自行找博客安装。
 ## 编译
