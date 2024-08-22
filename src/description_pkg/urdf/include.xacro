@@ -1,0 +1,17 @@
+<robot name="my_thunder_mini" xmlns:xacro="http://wiki.ros.org/xacro">
+    <!-- 包含惯性矩阵封装文件 -->
+    <xacro:include filename="head.xacro" />
+
+    <xacro:include filename="thunder_mini.xacro" />
+    <xacro:include filename="gazebo/move.xacro" />
+    <!-- 雷达 -->
+    <xacro:include filename="gazebo/laser.xacro" />
+   <!-- <xacro:include filename="gazebo/laser1.xacro" />-->
+    <!-- 相机 -->
+    <xacro:include filename="gazebo/camera.xacro" />
+    <!-- 深度相机 -->
+    <xacro:include filename="gazebo/kinect.xacro" />
+   
+
+</robot>
+

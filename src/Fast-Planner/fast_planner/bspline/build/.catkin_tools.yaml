@@ -1,0 +1,6 @@
+devel_space: /home/handsfree/LMPC_Fast_Thunder/src/Fast-Planner/fast_planner/bspline/devel
+install: false
+install_space: /home/handsfree/LMPC_Fast_Thunder/src/Fast-Planner/fast_planner/bspline/install
+profile: default
+source_space: /home/handsfree/LMPC_Fast_Thunder/src/Fast-Planner/fast_planner/bspline/src
+workspace: /home/handsfree/LMPC_Fast_Thunder/src/Fast-Planner/fast_planner/bspline

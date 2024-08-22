@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libquadrotor_dynamics.so -o /home/handsfree/Amcl_LMPC_Fast_Real/devel/lib/libquadrotor_dynamics.so CMakeFiles/quadrotor_dynamics.dir/src/dynamics/Quadrotor.cpp.o  -L/home/handsfree/Amcl_LMPC_Fast_Real/src/Fast-Planner/uav_simulator/Utils/cmake_utils/lib/mosek8 

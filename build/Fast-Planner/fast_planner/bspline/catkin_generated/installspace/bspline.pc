@@ -1,0 +1,8 @@
+prefix=/home/handsfree/Amcl_LMPC_Fast_Real/install
+
+Name: bspline
+Description: Description of bspline
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lbspline
+Requires: 

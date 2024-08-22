@@ -1,0 +1,8 @@
+prefix=/home/handsfree/Amcl_LMPC_Fast_Real/devel
+
+Name: lidar2world
+Description: Description of lidar2world
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

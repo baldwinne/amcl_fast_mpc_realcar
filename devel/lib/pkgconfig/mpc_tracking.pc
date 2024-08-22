@@ -1,0 +1,8 @@
+prefix=/home/handsfree/Amcl_LMPC_Fast_Real/devel
+
+Name: mpc_tracking
+Description: Description of mpc_tracking
+Version: 0.0.0
+Cflags: -I/home/handsfree/Amcl_LMPC_Fast_Real/devel/include -I/home/handsfree/Amcl_LMPC_Fast_Real/src/mpc_tracking/include
+Libs: -L${prefix}/lib -lmpc_test
+Requires: geometry_msgs nav_msgs roscpp std_msgs tf2 message_runtime

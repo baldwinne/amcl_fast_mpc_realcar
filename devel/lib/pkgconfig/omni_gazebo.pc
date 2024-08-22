@@ -1,0 +1,8 @@
+prefix=/home/handsfree/Amcl_LMPC_Fast_Real/devel
+
+Name: omni_gazebo
+Description: Description of omni_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

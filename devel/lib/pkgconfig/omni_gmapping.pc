@@ -1,0 +1,8 @@
+prefix=/home/handsfree/Amcl_LMPC_Fast_Real/devel
+
+Name: omni_gmapping
+Description: Description of omni_gmapping
+Version: 1.4.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
