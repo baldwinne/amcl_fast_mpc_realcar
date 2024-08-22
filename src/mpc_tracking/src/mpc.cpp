@@ -100,7 +100,7 @@ Eigen::MatrixXd Mpc::getPredictState(Eigen::Vector3d x_k, vector<Eigen::Vector3d
 
 
 void Mpc::setWeightMatrices() {
-    double omega0 = 50, omega1 = 10; 
+    double omega0 = 60, omega1 = 10; 
     Q_ = Eigen::MatrixXd::Identity(3*mpc_window,3*mpc_window)*omega0;//对状态偏差进行较低的惩罚
     //for(int i=0; i<mpc_window; i+=1)
    //     Q_(i*3+2,i*3+2) = 0;
@@ -196,8 +196,8 @@ void Mpc::castMPCToQPConstraintMatrix() {
 
 void Mpc::castMPCToQPConstraintVectors() {
     // evaluate the lower and the upper inequality vectors
-    u_max_ << 0.5, 1;
-    u_min_ << -0.5, -1;
+    u_max_ << 0.5, 0.8;
+    u_min_ << -0.5, -0.8;
     lower_bound_ = Eigen::MatrixXd::Zero(2 * mpc_window, 1);
     upper_bound_ = Eigen::MatrixXd::Zero(2 * mpc_window, 1); 
 
