@@ -1,19 +1,16 @@
-#  small car
-运行效果见B站：https://www.bilibili.com/video/BV1wh4y1j7LD/?spm_id_from=333.999.0.0&vd_source=62bfb7720b0b2f9941f7f34210ba6a18
 ## 求解器
-需要安装OSQP，OSQP-Eigen，不难，可自行找博客安装。
+需要安装OSQP，OSQP-Eigen，自行找博客安装。
 ## 编译
 编译mpc_tracking 这个功能包报错找不到什么包可以先编译fastplanner，然后再编译其他的，当然没编译过fastplanner的需要去安装点东西，具体可以去fastplannergithub仓库去看去安装一下。
 
 ## packages介绍
 
-## 1 omni_robot
+## 1 robot
 
 `功能：` 启动仿真环境，会出现一个带雷达的小车。
 source devel/setup.bash
 
-`启动：` roslaunch omni_gazebo gazebo.launch 
-roslaunch description_pkg gazebo_robot.launch 
+`启动：`
 roslaunch amclwithmap_pkg amcl_with_map.launch map_name:=my_map sim:=false
 roslaunch amclwithmap_pkg amcl_with_map.launch map_name:=my_map08202100 sim:=true
 实物中：1、编写了AMCL功能包、map_Server、handsfree_hw硬件驱动
