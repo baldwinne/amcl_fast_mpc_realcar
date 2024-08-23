@@ -4,7 +4,7 @@
 MPC： https://github.com/Dangko/ego-planner-for-ground-robot
 https://github.com/USE-jx/LMPC_OSQP_EIGEN/
 ## 代码运行效果视频：
-单无人车实车运行视频：
+单无人车实车运行视频：https://www.bilibili.com/video/BV1Q2WEeoEWF/?spm_id_from=333.999.0.0&vd_source=f4ec4aca12529934576bd467bb68a430
 多无人车多点访问仿真视频：https://www.bilibili.com/video/BV1ZE421379M/?spm_id_from=333.999.0.0&vd_source=f4ec4aca12529934576bd467bb68a430
 ## 求解器
 需要安装OSQP，OSQP-Eigen，自行找博客安装。
@@ -19,12 +19,13 @@ https://github.com/USE-jx/LMPC_OSQP_EIGEN/
 source devel/setup.bash
 
 `启动：`
-roslaunch amclwithmap_pkg amcl_with_map.launch map_name:=my_map sim:=false
-roslaunch amclwithmap_pkg amcl_with_map.launch map_name:=my_map08202100 sim:=true
-实物中：1、编写了AMCL功能包、map_Server、handsfree_hw硬件驱动
+启动实车：roslaunch amclwithmap_pkg amcl_with_map.launch map_name:=my_map sim:=false
+启动仿真：roslaunch amclwithmap_pkg amcl_with_map.launch map_name:=my_map08202100 sim:=true
+
+实车中：1、编写了AMCL功能包、map_Server；加入了handsfree_hw小车底盘、雷达硬件驱动
 2、更改fast_planner订阅的/odom
-3、更改mpc_node订阅/发布的/odom /cmd_vel
-4、注释了handsfree_hw包里的joint_publisher
+3、更改mpc_node订阅或发布的/odom、/cmd_vel
+4、注释了handsfree_hw包里的joint_publisher避免重复启动该节点
 ## 2 lidar2world
 
 `功能：` 把雷达系的点云转到odom系下，传给fastplanner的建图包。
